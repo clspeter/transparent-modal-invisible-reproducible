@@ -20,9 +20,11 @@ This is a Expo project to reproduce the transparent modal invisible problem.
 
 ## How to reproduce
 
-1. Press MAINSTACK
-2. Press STACK1 and go back to MAINSTACK
-3. Press STACK2 and go back to MAINSTACK
-4. Press TRANSPARENTMODAL
+1. Go To STACK0
+2. Go To STACK1 and go back to STACK0
+3. Go To STACK2 and go back to STACK0
+4. Press TRANSPARENT MODAL IN STACK0
 
 you can see the transparent modal is mount in console.log but modal is invisible, also the modal can be press
+
+This bug will not happened if you start action 2 from the root stack

@@ -16,28 +16,22 @@ import { router } from "expo-router";
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text>Main</Text>
-      <Button onPress={() => router.navigate("/stack")} title="MainStack" />
+    <View style={{ gap: 16 }}>
+      <Text>Start Here</Text>
+      <Button onPress={() => router.navigate("/stack")} title="Stack0" />
+      <Text>
+        This bug needs to init in a nested stack, will not happened from here
+      </Text>
+      <Button onPress={() => router.navigate("/stack1")} title="Stack1" />
+      <Button onPress={() => router.navigate("/stack2")} title="Stack2" />
+      <Button
+        onPress={() => router.navigate("/stack/modal-page")}
+        title="Transparent Modal In Stack0"
+      />
+      <Button
+        onPress={() => router.navigate("/modal-page")}
+        title="Transparent Modal In Root"
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
-  },
-});

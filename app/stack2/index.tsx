@@ -4,7 +4,7 @@ import React from "react";
 const Stack2Index = () => {
   return (
     <View>
-      <Text>Stack2Index</Text>
+      <Text>Stack2 Index</Text>
     </View>
   );
 };
