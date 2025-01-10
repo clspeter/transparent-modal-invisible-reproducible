@@ -31,6 +31,37 @@ you can see the transparent modal is mount with console.log but modal is invisib
 
 This bug will not happened if you start action 2 from the root stack
 
-## Tested Devices
+### Screens version
 
-Google Pixel 7a (Android 15)
+4.4.0
+
+### React Native version
+
+0.76.5
+
+### Platforms
+
+Android
+
+JavaScript runtime
+JSC
+
+### Workflow
+
+Expo
+
+### Architecture
+
+Fabric (New Architecture)
+
+### Build type
+
+Debug mode
+
+### Device
+
+Both Android emulator and Physical device
+
+### Device model
+
+Pixel 7a
