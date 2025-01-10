@@ -27,7 +27,7 @@ Only happened on Android
 3. Go To STACK2 and go back to STACK0
 4. Press TRANSPARENT MODAL IN STACK0
 
-you can see the transparent modal is mount with console.log but modal is invisible, also the modal still can be touch and press.
+you can see the transparent modal is mount with Toast, but modal is invisible, also the modal still can be touch and press.
 
 This bug will not happened if you start action 2 from the root stack
 
