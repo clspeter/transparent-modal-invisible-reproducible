@@ -1,10 +1,15 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, ToastAndroid, View } from "react-native";
 import React, { useEffect } from "react";
 import { router } from "expo-router";
 
 const ModalPage = () => {
+  const showToast = (text: string) => {
+    ToastAndroid.show(text, ToastAndroid.SHORT);
+  };
+
   useEffect(() => {
     console.log("ModalPage is mounted");
+    showToast("ModalPage is mounted");
   }, []);
 
   return (
@@ -12,7 +17,8 @@ const ModalPage = () => {
       <Text style={{ fontSize: 24 }}>ModalPage</Text>
       <Pressable
         onPress={() => {
-          console.log("Pressed Back");
+          console.log("Back Pressed");
+          showToast("Back Pressed");
           router.back();
         }}
         style={styles.backButton}
