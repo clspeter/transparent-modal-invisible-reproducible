@@ -1,13 +1,9 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { ComponentProps, useEffect } from "react";
+import { useEffect } from "react";
 import "react-native-reanimated";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -35,22 +31,9 @@ export default function RootLayout() {
         <Stack.Screen name="stack" options={{ headerTitle: "Stack0" }} />
         <Stack.Screen name="stack1" options={{ headerTitle: "Stack1" }} />
         <Stack.Screen name="stack2" options={{ headerTitle: "Stack2" }} />
-        <Stack.Screen name="modal-page" options={modalStackScreenOptions} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
   );
 }
-
-export const modalStackScreenOptions: ComponentProps<
-  typeof Stack.Screen
->["options"] = {
-  presentation: "transparentModal",
-  animation: "none",
-  animationDuration: 0,
-  contentStyle: {
-    justifyContent: "flex-end",
-    backgroundColor: "transparent",
-  },
-};

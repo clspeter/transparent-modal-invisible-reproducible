@@ -15,8 +15,7 @@ export const modalStackScreenOptions: ComponentProps<
   typeof Stack.Screen
 >["options"] = {
   presentation: "transparentModal",
-  animation: "none",
-  animationDuration: 0,
+  animation: "slide_from_bottom",
   contentStyle: {
     justifyContent: "flex-end",
     backgroundColor: "transparent",
