@@ -1,6 +1,7 @@
 # transparent-modal-reproducible
 
 This is a Expo project to reproduce the transparent modal invisible problem.
+Issue still persist after update react-native-screens to 4.6.0
 
 ## Get started
 
@@ -10,10 +11,16 @@ This is a Expo project to reproduce the transparent modal invisible problem.
    yarn install
    ```
 
-2. Start the app
+2. Start the app with development build
 
    ```bash
-   npx expo start
+   yarn android 
+   ```
+
+   or
+
+   ```bash
+   npx expo run:android
    ```
 
 3. Scan with [Expo Go](https://expo.dev/go)
@@ -27,13 +34,13 @@ Only happened on Android
 3. Go To STACK2 and go back to STACK0
 4. Press TRANSPARENT MODAL IN STACK0
 
-you can see the transparent modal is mount with Toast, but modal is invisible, also the modal still can be touch and press.
+You can see the transparent modal is mount with Toast, but modal is invisible, also the modal still can be touch and press.
 
-This bug will not happened if you start action 2 from the root stack
+If facing c++ error, rename project folder to shorter name
 
 ### Screens version
 
-4.4.0
+4.6.0
 
 ### React Native version
 
@@ -43,7 +50,8 @@ This bug will not happened if you start action 2 from the root stack
 
 Android
 
-JavaScript runtime
+### JavaScript runtime
+
 JSC
 
 ### Workflow
