@@ -1,6 +1,7 @@
 # transparent-modal-reproducible
 
 This is a Expo project to reproduce the transparent modal invisible problem.
+
 Issue still persist after update react-native-screens to 4.6.0
 
 ## Get started
