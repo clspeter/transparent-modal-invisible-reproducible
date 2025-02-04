@@ -12,7 +12,7 @@ Issue still persist after update react-native-screens to 4.6.0
    yarn install
    ```
 
-2. Start the app with development build
+2. build and start the app with development build
 
    ```bash
    yarn android 
@@ -23,8 +23,6 @@ Issue still persist after update react-native-screens to 4.6.0
    ```bash
    npx expo run:android
    ```
-
-3. Scan with [Expo Go](https://expo.dev/go)
 
 ## How to reproduce
 
